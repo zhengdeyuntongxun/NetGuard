@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="category_defaults"
+        android:title="@string/setting_defaults">
+        <com.zhengde163.netguard.SwitchPreference
+            android:defaultValue="true"
+            android:key="whitelist_wifi"
+            android:title="@string/setting_whitelist_wifi" />
+        <com.zhengde163.netguard.SwitchPreference
+            android:defaultValue="true"
+            android:key="whitelist_other"
+            android:title="@string/setting_whitelist_other" />
+        <com.zhengde163.netguard.SwitchPreference
+            android:defaultValue="false"
+            android:key="screen_wifi"
+            android:title="@string/setting_screen_wifi" />
+        <com.zhengde163.netguard.SwitchPreference
+            android:defaultValue="false"
+            android:key="screen_other"
+            android:title="@string/setting_screen_other" />
+        <com.zhengde163.netguard.SwitchPreference
+            android:defaultValue="false"
+            android:key="whitelist_roaming"
+            android:title="@string/setting_whitelist_roaming" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="category_options"
+        android:title="@string/setting_options">
+        <com.zhengde163.netguard.SwitchPreference
+            android:defaultValue="true"
+            android:key="install"
+            android:summary="@string/summary_install"
+            android:title="@string/setting_install" />
+        <EditTextPreference
+            android:defaultValue="0"
+            android:inputType="number"
+            android:key="auto_enable"
+            android:summary="@string/summary_auto" />
+        <EditTextPreference
+            android:defaultValue="0"
+            android:inputType="number"
+            android:key="screen_delay"
+            android:summary="@string/summary_delay" />
+        <com.zhengde163.netguard.SwitchPreference
+            android:defaultValue="true"
+            android:key="update_check"
+            android:summary="@string/summary_update"
+            android:title="@string/setting_update" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

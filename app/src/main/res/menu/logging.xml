@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:netguard="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="@string/menu_search"
+        netguard:actionViewClass="android.support.v7.widget.SearchView"
+        netguard:showAsAction="always|collapseActionView" />
+
+    <item
+        android:id="@+id/menu_filter"
+        android:icon="@drawable/ic_filter_list_white_24dp"
+        android:title="@string/menu_filter"
+        netguard:showAsAction="always|collapseActionView">
+        <menu>
+            <item
+                android:id="@+id/menu_protocol_udp"
+                android:icon="@drawable/checked"
+                android:title="@string/menu_protocol_udp" />
+            <item
+                android:id="@+id/menu_protocol_tcp"
+                android:icon="@drawable/checked"
+                android:title="@string/menu_protocol_tcp" />
+            <item
+                android:id="@+id/menu_protocol_other"
+                android:icon="@drawable/checked"
+                android:title="@string/menu_protocol_other" />
+            <item
+                android:id="@+id/menu_traffic_allowed"
+                android:icon="@drawable/check"
+                android:title="@string/menu_traffic_allowed" />
+            <item
+                android:id="@+id/menu_traffic_blocked"
+                android:icon="@drawable/checked"
+                android:title="@string/menu_traffic_blocked" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu"
+        android:icon="@drawable/more"
+        android:title="@string/menu_filter"
+        netguard:showAsAction="always|collapseActionView">
+        <menu>
+            <item
+                android:id="@+id/menu_log_live"
+                android:icon="@drawable/checked"
+                android:title="@string/menu_live" />
+            <item
+                android:id="@+id/menu_refresh"
+                android:enabled="false"
+                android:title="@string/menu_refresh" />
+            <item
+                android:id="@+id/menu_log_resolve"
+                android:icon="@drawable/check"
+                android:title="@string/menu_resolve" />
+            <item
+                android:id="@+id/menu_log_organization"
+                android:icon="@drawable/check"
+                android:title="@string/menu_organization" />
+            <item
+                android:id="@+id/menu_log_clear"
+                android:title="@string/menu_clear" />
+        </menu>
+    </item>
+</menu>

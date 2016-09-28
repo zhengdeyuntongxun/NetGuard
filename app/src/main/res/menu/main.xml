@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:netguard="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="@string/menu_search"
+        netguard:actionViewClass="android.support.v7.widget.SearchView"
+        netguard:showAsAction="always|collapseActionView" />
+    <item
+        android:id="@+id/menu_filter"
+        android:icon="@drawable/ic_filter_list_white_24dp"
+        android:title="@string/menu_filter"
+        netguard:showAsAction="always|collapseActionView">
+        <menu>
+            <item
+                android:id="@+id/menu_app_user"
+                android:icon="@drawable/checked"
+                android:title="@string/menu_app_user" />
+            <item
+                android:id="@+id/menu_app_system"
+                android:icon="@drawable/checked"
+                android:title="@string/menu_app_system" />
+            <item
+                android:id="@+id/menu_app_nointernet"
+                android:icon="@drawable/checked"
+                android:title="@string/menu_app_nointernet" />
+            <item
+                android:id="@+id/menu_app_disabled"
+                android:icon="@drawable/checked"
+                android:title="@string/menu_app_disabled" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menu_sort"
+        android:icon="@drawable/ic_sort_white_24dp"
+        android:title="@string/menu_sort"
+        netguard:showAsAction="always|collapseActionView">
+        <menu>
+            <group android:id="@+id/radioCheck"
+                android:menuCategory="secondary">
+                <item
+                    android:id="@+id/menu_sort_name"
+                    android:icon="@drawable/singlechecked"
+                    android:title="@string/menu_sort_name" />
+                <item
+                    android:id="@+id/menu_sort_data"
+                    android:icon="@drawable/singlecheck"
+                    android:title="@string/menu_sort_data" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu"
+        android:icon="@drawable/more"
+        android:title="@string/menu_filter"
+        netguard:showAsAction="always|collapseActionView">
+        <menu>
+    <item
+        android:id="@+id/menu_log"
+        android:title="@string/menu_log" />
+    <item
+        android:id="@+id/menu_settings"
+        android:title="@string/menu_settings" />
+    <item
+        android:id="@+id/menu_legend"
+        android:title="@string/menu_legend" />
+    <item android:id = "@+id/login_again"
+        android:title="@string/login_again"/>
+            </menu>
+    </item>
+</menu>

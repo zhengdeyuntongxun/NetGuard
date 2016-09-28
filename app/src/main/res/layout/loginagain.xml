@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:src="@mipmap/login"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="网络守卫"
+        android:id="@+id/textView"
+        android:layout_marginTop="40dp"
+        android:textSize="30dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/loginUser"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="48dp"
+        android:padding="5dp"
+        android:background="@drawable/layoutshape"
+        android:layout_below="@+id/textView">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/phone"/>
+        <View
+            android:layout_width="2px"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="fill_parent"
+            android:background="#f7f8f8"/>
+        <EditText
+            android:layout_marginLeft="12dp"
+            android:digits="0123456789"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phoneNumber"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextMedium"
+            android:hint="请输入手机号"
+            android:background="@null"
+            android:textColorHint="#f7f8f8"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:id="@+id/login"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textAppearance="@style/TextLarge"
+        android:background="@drawable/buttonshape"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/loginUser"
+        android:onClick="login"/>
+
+</RelativeLayout>
